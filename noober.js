@@ -69,11 +69,11 @@ function renderRides(ridesArray) {
 
 window.addEventListener('DOMContentLoaded', function () {
   let allRidesButton = document.querySelector('#all-filter')
-  allRidesButton.addEventListener('click', async function (event) {
-    event.preventDefault()
+  allRidesButton.addEventListener('click', async function (event) {    
+    event.preventDefault()        
     console.log('All Rides button was clicked')
     document.querySelector(`.rides`).innerHTML = ""
-    let output = document.querySelector(`rides`)
+    document.querySelector(`rides`)
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     // console.log(json)
@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', function () {
     event.preventDefault()
     console.log('Noober Purple button was clicked')
     document.querySelector(`.rides`).innerHTML = ""
-    let output = document.querySelector(`rides`)
+    document.querySelector(`rides`)
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     let newArray = []
@@ -103,7 +103,7 @@ window.addEventListener('DOMContentLoaded', function () {
     event.preventDefault()
     console.log('Noober Pool button was clicked')
     document.querySelector(`.rides`).innerHTML = ""
-    let output = document.querySelector(`rides`)
+    document.querySelector(`rides`)
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     let newArray = []
@@ -121,7 +121,7 @@ window.addEventListener('DOMContentLoaded', function () {
     event.preventDefault()
     console.log('Noober XL button was clicked')
     document.querySelector(`.rides`).innerHTML = ""
-    let output = document.querySelector(`rides`)
+    document.querySelector(`rides`)
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     let newArray = []
@@ -139,7 +139,7 @@ window.addEventListener('DOMContentLoaded', function () {
     event.preventDefault()
     console.log('Noober X button was clicked')
     document.querySelector(`.rides`).innerHTML = ""
-    let output = document.querySelector(`rides`)
+    document.querySelector(`rides`)
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     let newArray = []
